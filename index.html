@@ -139,7 +139,7 @@
 		<script>
 			const queryString = window.location.search;
 			console.log(queryString);
-			if (isqueryString === "") {
+			if (queryString != "") {
 				const urlParams = new URLSearchParams(queryString);
 				const name = urlParams.get("name");
 				document.getElementById("welcome").innerText = `Welkom bij ${name}`;
